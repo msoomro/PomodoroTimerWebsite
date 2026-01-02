@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro Timer</title>
+    <!-- todo: change title to current countdown time -->
+</head>
+<body>
+    <!-- todo: allow user to set countdown time -->
+    <div id="time"> 
+        <span id="minutes">00</span>
+        :
+        <span id="seconds">10</span>
+    </div>
+     
+    <button onclick="startCounter()" id="startbtn" type="button">Start</button>
+    <button onclick="pauseCounter()" id="pausebtn" type="button" disabled>Pause</button>
+    <button onclick="resetCounter()" id="resetbtn" type="button" disabled>Reset</button>
+    <script src="script.js"></script>
+</body>
+</html>
