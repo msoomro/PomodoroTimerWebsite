@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(16, 78, 60);
+    color: white;
+    font-size: 48px;
+
+}
+#time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    background-color: rgba(0,0,0,.2);
+    padding: 0 15px;
+    margin-top: 40vh;
+}
+button {
+    font-size: 36px;
+    margin: 15px 5px;
+}
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
