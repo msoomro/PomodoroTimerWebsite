@@ -8,18 +8,20 @@
     <!-- todo: change title to current countdown time -->
 </head>
 <body>
-    <!-- <div id="tabs">
-        <button onclick="()" id="work" type="button">Work</button>
-        <button onclick="()" id="break1" type="button" >Short Break</button>
-        <button onclick="()" id="break2" type="button" >Long Break</button>    
-    </div> -->
-    <!-- todo: allow user to set countdown time -->
-     <div id="timebox">
-        <div id="time"> 
-            <span id="minutes">00</span>:<span id="seconds">10</span>
+    <div id="counter">
+        <div id="tabs">
+            <button onclick="toggleCountdownType(this)" id="focus" class="selectedTab" type="button">Focus</button>
+            <button onclick="toggleCountdownType(this)" id="break1" class="unselectedTab" type="button">Short Break</button>
+            <button onclick="toggleCountdownType(this)" id="break2" class="unselectedTab" type="button">Long Break</button>    
         </div>
-        
-        
+        <!-- todo: allow user to set countdown time -->
+        <div id="timebox">
+            
+            <div id="time"> 
+                <span id="minutes">00</span>:<span id="seconds">10</span>
+            </div>
+            
+        </div>
     </div>
     <div id="buttons">
         <button onclick="startCounter()" id="startbtn" type="button">Start</button>

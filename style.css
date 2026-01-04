@@ -4,18 +4,25 @@ body {
     font-size: 48px;
     font-family: monospace, Arial, sans-serif;
 }
-#timebox {
+#counter {
     margin: 35vh 0 0 0;
+}
+#timebox {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #time {
-    background-color: rgba(100,100,100,.3);
+    background-color: rgba(100,100,100,.35);
     font-size: 150px;
     padding: 0 15px;
 }
+
+button:hover {
+    cursor: pointer;
+}
+
 #buttons button {
     font-size: 36px;
     margin: 15px 5px;
@@ -28,15 +35,36 @@ body {
     border-color: rgb(13, 57, 44);
     border-style:solid;
 }
-button:active {
+#buttons button:active {
     border-width: 4px 0 0 5px;
 }
-button:disabled {
+#buttons button:disabled {
     background-color: rgba(255, 235, 205, .7);
 }
 
-#buttons {
+#buttons, #tabs {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#tabs button {
+    width: 145px;
+    background-color: rgba(100,100,100,.35);
+    color: rgb(255, 255, 255);
+    margin: 0 2px;
+    padding: 5px 5px 5px 5px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+#tabs .selectedTab {
+    background-color: rgba(100,100,100,.35);
+    color: rgb(255, 255, 255);
+}
+
+#tabs .unselectedTab {
+    background-color: rgba(100,100,100,.2);
+    color: rgba(255, 255, 255, .5);
 }
