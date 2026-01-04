@@ -2,21 +2,39 @@ body {
     background-color: rgb(16, 78, 60);
     color: white;
     font-size: 48px;
-
+    font-family: monospace, Arial, sans-serif;
 }
-#time {
+#timebox {
+    margin: 35vh 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 150px;
-    background-color: rgba(0,0,0,.2);
-    padding: 0 15px;
-    margin-top: 40vh;
 }
-button {
+
+#time {
+    background-color: rgba(100,100,100,.3);
+    font-size: 150px;
+    padding: 0 15px;
+}
+#buttons button {
     font-size: 36px;
     margin: 15px 5px;
+    padding: 5px 15px;
+    background-color: rgb(255, 235, 205);
+    color: rgb(16, 78, 60);
+    font-weight: 700;
+    border-width: 0 5px 7px 0;
+    border-radius: 10px;
+    border-color: rgb(13, 57, 44);
+    border-style:solid;
 }
+button:active {
+    border-width: 4px 0 0 5px;
+}
+button:disabled {
+    background-color: rgba(255, 235, 205, .7);
+}
+
 #buttons {
     display: flex;
     justify-content: center;

@@ -2,7 +2,7 @@ var minutes = 25;
 var seconds = 0;
 var x;
 function startCounter() {
-    // todo: troubleshoot why i'm losing the first second
+    // todo: troubleshoot why i'm losing the first second--fixed when updated interval to 250, is that bad?
     document.getElementById('startbtn').disabled = true;
     document.getElementById('pausebtn').disabled = false;
     document.getElementById('resetbtn').disabled = false;
@@ -27,13 +27,13 @@ function startCounter() {
     }, 250);
 }
 
-function pauseCounter() { //not working
+function pauseCounter() {
     document.getElementById('startbtn').disabled = false;
     document.getElementById('pausebtn').disabled = true;
     clearInterval(x);
 }
 
-function resetCounter() { //not working
+function resetCounter() { //not working after timer goes to 0
     document.getElementById('startbtn').disabled = false;
     document.getElementById('pausebtn').disabled = true;
     document.getElementById('resetbtn').disabled = true;
