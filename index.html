@@ -14,11 +14,11 @@
             <button onclick="toggleCountdownType(this)" id="break1" class="unselectedTab" type="button">Long Break</button>
             <button onclick="toggleCountdownType(this)" id="break2" class="unselectedTab" type="button">Short Break</button>    
         </div>
-        <!-- todo: allow user to set countdown time -->
+        
         <div id="timebox">
             
             <div id="time"> 
-                <span id="minutes" onclick="makeTimeEditable(this)">00</span>:<span id="seconds" onclick="makeTimeEditable(this)">05</span>
+                <span type="number" id="hours" onclick="makeTimeEditable(this)" hidden>00</span><span id="hourcolon" hidden>:</span><span id="minutes" onclick="makeTimeEditable(this)">00</span>:<span id="seconds" onclick="makeTimeEditable(this)">05</span>
             </div>
             
         </div>
