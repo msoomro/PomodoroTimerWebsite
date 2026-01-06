@@ -91,16 +91,43 @@ function updateTime() {
         document.getElementById("hours").innerHTML = String(focusHours).padStart(2,'0');
         document.getElementById("minutes").innerHTML = String(focusMinutes).padStart(2,'0');
         document.getElementById("seconds").innerHTML = String(focusSeconds).padStart(2,'0');
+
+        if (document.getElementById("hours").innerHTML > 0) {
+            document.getElementById("hours").hidden = false;
+            document.getElementById("hourcolon").hidden = false;
+        }
+        else {
+            document.getElementById("hours").hidden = true;
+            document.getElementById("hourcolon").hidden = true;
+        }
     }
     else if (btn.id == "break1"){
         document.getElementById("hours").innerHTML = String(break1Hours).padStart(2,'0');
         document.getElementById("minutes").innerHTML = String(break1Minutes).padStart(2,'0');
         document.getElementById("seconds").innerHTML = String(break1Seconds).padStart(2,'0');
+        
+        if (document.getElementById("hours").innerHTML > 0) {
+            document.getElementById("hours").hidden = false;
+            document.getElementById("hourcolon").hidden = false;
+        }
+        else {
+            document.getElementById("hours").hidden = true;
+            document.getElementById("hourcolon").hidden = true;
+        }
     }
     else if (btn.id == "break2"){
         document.getElementById("hours").innerHTML = String(break2Hours).padStart(2,'0');
         document.getElementById("minutes").innerHTML = String(break2Minutes).padStart(2,'0');
         document.getElementById("seconds").innerHTML = String(break2Seconds).padStart(2,'0');
+        
+        if (document.getElementById("hours").innerHTML > 0) {
+            document.getElementById("hours").hidden = false;
+            document.getElementById("hourcolon").hidden = false;
+        }
+        else {
+            document.getElementById("hours").hidden = true;
+            document.getElementById("hourcolon").hidden = true;
+        }
     }
 }
 
